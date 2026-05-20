@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('WhatsApp Image 2026-05-19 at 9.48.16 AM.jpeg') center/cover no-repeat;
+}
+header {
+    background: url(WhatsApp Image 2026-05-19 at 9.48.16 AM.jpeg);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.8rem;
+}
+header p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+.grid {
+    display: grid;
+    gap: 25px;
+}
+.card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    padding: 25px;
+}
+h2 {
+    margin-top: 0;
+    color: #3a1f4a;
+}
+.contact-list,
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-list li,
+.features-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.feature-item::before {
+    content: '•';
+    color: #f18f01;
+    font-weight: bold;
+    margin-top: 2px;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+.hero-image {
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 260px;
+    background: url('WhatsApp Image 2026-05-19 at 9.51.58 AM.jpeg') center/cover no-repeat;
+}
+.button-primary {
+    display: inline-block;
+    background: #7b4b9f;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(123,75,159,0.25);
+}
+.section-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.section-split img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+form {
+    display: grid;
+    gap: 18px;
+}
+label {
+    font-weight: 600;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dcd3d0;
+    border-radius: 14px;
+    font-size: 1rem;
+    resize: vertical;
+}
+textarea {
+    min-height: 120px;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+.form-row .full-width {
+    grid-column: 1 / -1;
+}
+.submit-btn {
+    background: #f18f01;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    font-size: 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+.submit-btn:hover {
+    background: #d07600;
+}
+.note {
+    font-size: 0.95rem;
+    color: #5a4b57;
+}
+#responseMessage {
+    display: none;
+    margin-top: 12px;
+}
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    color: #5a4b57;
+    font-size: 0.95rem;
+}
+@media (max-width: 860px) {
+    .hero, .section-split {
+        grid-template-columns: 1fr;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
